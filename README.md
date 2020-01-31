@@ -3,11 +3,12 @@
   How to use it
 
     Clone repo  
-    Run migration - php artisan migrate
-    Add dummy data - database/dummyData.sql has some basic test data to start with
-    Use (and edit) the example env file - cp ./.env.example ./.env
-    Serve the app - php artisan serve
-    
+    Use (and edit) the example env file - cp ./.env.example ./.env  
+    Update your DB connection details in the env file  
+    Generate a new app key - php artisan key:generate  
+    Run migration - php artisan migrate  
+    Add dummy data - database/dummyData.sql has some basic test data to start with  
+    Serve the app - php artisan serve  
 
   API end points  
 
