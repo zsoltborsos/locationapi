@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "4853c6f2-475e-4e35-8578-45f6f3f209c2",
+		"name": "Location API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/api/locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/locations",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"locations"
+					]
+				},
+				"description": "List of Locations"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/locations/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/locations/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"locations",
+						"2"
+					]
+				},
+				"description": "Individual location"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/locations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "latitude",
+							"value": "11.3213123",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "10.2131231",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/locations",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"locations"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "12.232131",
+							"disabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "14.321314",
+							"disabled": true
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Add location entry"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/locations/8",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "latitude",
+							"value": "11.3213123",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "10.2131231",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/locations/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"locations",
+						"8"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "12.232131",
+							"disabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "14.321314",
+							"disabled": true
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Update existing Location record"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/locations/10",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/locations/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"locations",
+						"10"
+					]
+				},
+				"description": "Delete a location record"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "Show users with latest location"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
